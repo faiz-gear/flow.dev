@@ -38,7 +38,23 @@ export async function middleware(request: NextRequest) {
     }
   );
 
-  await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const url = request.nextUrl.clone();
+
+  // If user is authenticated and trying to access auth pages, redirect to dashboard
+  if (user && (url.pathname.startsWith('/auth/signin') || url.pathname.startsWith('/auth/signup'))) {
+    url.pathname = '/dashboard';
+    return NextResponse.redirect(url);
+  }
+
+  // If user is not authenticated and trying to access protected pages, redirect to signin
+  if (!user && url.pathname.startsWith('/dashboard')) {
+    url.pathname = '/auth/signin';
+    return NextResponse.redirect(url);
+  }
 
   return response;
 }
