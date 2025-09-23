@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@heroui/button";
+import { Button, Link } from "@heroui/react";
 
 export function LandingPage() {
   return (
@@ -8,17 +8,17 @@ export function LandingPage() {
       <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
         flow.dev
       </h1>
-      <p className="text-xl text-gray-400 mb-8">Professional engineering tools for developers</p>
+      <p className="text-xl text-gray-400 mb-8">Your GitHub workflow automation platform</p>
       <div className="flex gap-4 justify-center">
-        <Button color="primary" size="lg">
-          Get Started
+        <Button as={Link} href="/auth/signup" color="primary" size="lg">
+          Sign Up
         </Button>
-        <Button variant="bordered" size="lg">
-          Learn More
+        <Button as={Link} href="/auth/signin" variant="bordered" size="lg">
+          Sign In
         </Button>
       </div>
       <p className="text-sm text-gray-500 mt-12">
-        Coming Soon - Building the future of development workflows
+        Streamline your development workflows with powerful automation
       </p>
     </div>
   );
