@@ -1,0 +1,76 @@
+{
+  "path": "cz-emoji",
+  "config": {
+    "cz-emoji": {
+      "format": "[{emoji}] {type}{scope}: {subject}",
+      "types": [
+        {
+          "emoji": "✨",
+          "code": ":sparkles:",
+          "description": "Introducing new features.",
+          "name": "feat"
+        },
+        {
+          "emoji": "🐛",
+          "code": ":bug:",
+          "description": "Fixing a bug.",
+          "name": "fix"
+        },
+        {
+          "emoji": "📚",
+          "code": ":books:",
+          "description": "Documentation only changes.",
+          "name": "docs"
+        },
+        {
+          "emoji": "🎨",
+          "code": ":art:",
+          "description": "Changes that do not affect the meaning of the code.",
+          "name": "style"
+        },
+        {
+          "emoji": "♻️",
+          "code": ":recycle:",
+          "description": "A code change that neither fixes a bug nor adds a feature.",
+          "name": "refactor"
+        },
+        {
+          "emoji": "⚡",
+          "code": ":zap:",
+          "description": "A code change that improves performance.",
+          "name": "perf"
+        },
+        {
+          "emoji": "✅",
+          "code": ":white_check_mark:",
+          "description": "Adding missing tests or correcting existing tests.",
+          "name": "test"
+        },
+        {
+          "emoji": "🔨",
+          "code": ":hammer:",
+          "description": "Changes that affect the build system or external dependencies.",
+          "name": "build"
+        },
+        {
+          "emoji": "👷",
+          "code": ":construction_worker:",
+          "description": "Changes to CI configuration files and scripts.",
+          "name": "ci"
+        },
+        {
+          "emoji": "🔧",
+          "code": ":wrench:",
+          "description": "Other changes that don't modify src or test files.",
+          "name": "chore"
+        },
+        {
+          "emoji": "⏪",
+          "code": ":rewind:",
+          "description": "Reverts a previous commit.",
+          "name": "revert"
+        }
+      ]
+    }
+  }
+}
