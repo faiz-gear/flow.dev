@@ -1,0 +1,11 @@
+# Example file to test commitizen workflow
+
+This file demonstrates how to use the new commit workflow.
+
+To use Commitizen:
+1. Make your changes
+2. Stage files: `git add .`
+3. Run: `npm run commit`
+4. Follow the interactive prompts
+
+The emojis will be added automatically based on your commit type selection!
