@@ -2,7 +2,7 @@
   "path": "cz-emoji",
   "config": {
     "cz-emoji": {
-      "format": "[{emoji}] {type}{scope}: {subject}",
+      "format": "{emoji}{type}{scope} : {subject}",
       "types": [
         {
           "emoji": "✨",
